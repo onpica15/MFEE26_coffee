@@ -1,0 +1,222 @@
+/* :root {
+    --blue: rgb(37, 57, 69);
+    --cream: rgb(252, 250, 247);
+    --gold: rgb(183, 153, 115);
+    --gray: rgb(217, 217, 217);
+    --dark-gray: rgb(203, 203, 203);
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cream);
+}
+.ui-wrap-main{
+    /* 限制範圍 */
+    width: 1440px;
+    margin: 90px auto 90px;
+}
+.ui-container{ 
+    /* 扣掉左右200px */
+    width: calc( 100% - 400px );
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+/* 資料表 */
+.ui-wrap-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 688px;
+    height: 860px;
+    border: 1.2px solid var(--blue);
+    border-radius: 3px;
+    margin-bottom: 100px;
+}
+.ui-title{
+    width: 100%;
+    color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 0;
+}
+.ui-title::after{
+    content: " ";
+    display: block;
+    border-bottom: 1.2px solid var(--blue);
+    width: 100%;
+    padding: 5px 0;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+    background-color: var(--gray);
+    margin: 40px 0 50px 0;
+    cursor: pointer;
+}
+.ui-info-wrap{
+    width: 440px;
+}
+.ui-info{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ui-info-title{
+    margin-right: 40px;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+.ui-field{
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    width: 360px;
+    height: 36px;
+    background-color: transparent;
+    color: var(--blue);
+    font-size: 1rem;
+    padding: 0 9px;
+}
+.ui-field:focus {
+    outline: none;
+    border: 2px solid var(--gold);
+}
+.ui-btn-password{
+    width: 150px;
+    height: 30px;
+    border: 1.5px solid var(--blue);
+    border-radius: 3px;
+    color: var(--blue);
+    background-color: transparent;
+    cursor: pointer;
+}
+.ui-btn-password:hover{
+    color: var(--cream);
+    border: none;
+    background-color: var(--blue);
+    margin: 0;
+}
+/* 按鈕 */
+.ui-btn-wrap{
+    display: flex;
+    justify-content: flex-end;
+}
+.ui-btn{
+    width: 68px;
+    height: 30px;
+    border: 1.5px solid var(--blue);
+    border-radius: 3px;
+    color: var(--blue);
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.ui-btn-active{
+    color: var(--cream);
+    border: none;
+    background-color: var(--blue);
+    margin: 0;
+}
+/* 變更密碼 */
+.editPassword{
+    display: block;
+}
+/* .ed-Pass:nth-child(1){
+    margin-top: 30px;
+} */
+.ed-Pass{
+    position: relative;
+    margin-bottom: 40px;
+}
+.ed-Pass-h1{
+    text-align: center;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+.ed-Pass-wrap{
+    height: 300px;
+    border: 1.2px solid var(--blue);
+    border-radius: 3px;
+    margin-bottom: 25px;
+    padding: 50px;
+}
+.ed-Pass-title{
+    flex-grow: 50%;
+    margin-right: 35px;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+.ed-Pass-field{
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    width: 300px;
+    height: 36px;
+    background-color: transparent;
+    color: var(--blue);
+    font-size: 1rem;
+    padding: 0 9px;
+}
+.ed-Pass-field:focus {
+    outline: none;
+    border: 2px solid var(--gold);
+}
+.ed-Pass-btn-wrap{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+.ed-Pass-field-err{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    color: red;
+    font-size: .8rem;
+}
+.ed-icon-eye{
+    color: var(--dark-gray);
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+/* 提示訊息 */
+.edit-msg-wrap{
+    width: 300px;
+    height: 150px;
+}
+.edit-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 150px;
+}
+.ed-field-err{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 37px;
+    color: red;
+    font-size: .8rem;
+}
+.ui-info-check{
+    position: relative;
+}
+.ed-Pass-info-check{
+    position: relative;
+}

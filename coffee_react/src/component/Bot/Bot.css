@@ -1,0 +1,367 @@
+.react-chatbot-kit-chat-inner-container {
+    height: 357px;
+}
+.react-chatbot-kit-chat-header {
+    display: none !important;
+}
+
+.react-chatbot-kit-chat-message-container {
+    height: 310px;
+    background: url(../../images/Coupon/ChatBox.png) no-repeat center center;
+    background-size: cover;
+    
+}
+.react-chatbot-kit-chat-btn-send {
+    width: 46px;
+    background-color: #B79973 !important;
+}
+.react-chatbot-kit-chat-bot-message {
+    margin-left:0px;
+}
+
+.react-chatbot-kit-chat-bot-avatar{
+    display: none !important;
+}
+.react-chatbot-kit-user-avatar{
+    display: none !important;
+}
+.BotBTN{
+    width: 33px;
+    background-color: #1f3646;
+    border: none;
+    border-radius: 25px;
+    bottom: 30px;
+    height: 50px;
+    position: fixed;
+    right: 30px;
+    width: 50px;
+    z-index: 9999;
+}
+.BotContainer{
+    border-radius: 5px;
+    bottom: 50px;
+    box-shadow: 5px 5px 13px rgb(91 81 81 / 40%);
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    position: fixed;
+    right: 30px;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+.Chatbot_header{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #efefef;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #514f4f;
+    padding: 12.5px;
+    font-weight: bold;
+    width: 100%;
+    height: 46px;
+    background-color:rgba(249, 240, 227, 1);
+    ;
+}
+
+.react-chatbot-kit-chat-message-container img{
+    width: 184px;
+    
+}
+.react-chatbot-kit-user-chat-message{
+    max-width: 184px;
+    overflow-wrap: break-word;
+    font-size: 12px;
+}
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar{
+    display: none !important;
+}
+.FoodMenuTable{
+    width:184px;
+    table-layout: fixed;
+}
+.tbl-header{
+    /* background-color: rgba(255,255,255,0.3); */
+    background-color: rgba(24, 60, 105, 0.3);
+    width: 184px;
+}
+.tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+.FoodMenuTh{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgba(9, 33, 63, 0.3);
+}
+.FoodMenuTd{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+.FoodMenuTd:hover{
+    background-color: rgba(9, 33, 63, 0.3);
+}
+.react-chatbot-kit-chat-bot-message span{
+    font-size: 12px;
+}
+.FoodMenuTdLink{
+    font-size: 12px;
+    color: #fff;
+}
+.RandomFoodMenuBox{
+    max-width: 184px;
+}
+.RandomFoodMenuTitle{
+    font-size: 12px;
+    background-color: rgba(230, 226, 226, 0.632);
+    padding: 5px;
+    line-height: 24px;
+}
+.RandomFoodMenuIMG img{
+    max-width: 180px;
+    margin: auto;
+}
+.RandomFoodMenuIMG{
+    margin-top: 3px;
+    width: 184px;
+    background-color: rgba(230, 226, 226, 0.632);
+}
+.ChatBotFAQBox{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.ChatBotFAQBoxBtn{
+    background-color: rgba(255, 255, 255, 0.592);
+    /* margin-top: 5px; */
+    margin: 2px 2px;
+    padding: 5px;
+    /* width: 100px; */
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ChatBotFAQBoxBtn:hover{
+    background-color: rgb(255, 255, 255);
+}
+.FAQquestion{
+    margin-top: 5px;
+    font-size: 12px;
+    
+}
+.FAQqR{
+    margin-top: 5px;
+    right: -140.5px;
+    width: 100px;
+}
+.FAQquestion img{
+    width: 100%;
+}
+.personalityQuizBox{
+width: 240px;
+min-height: 160px;
+margin-top: 2px;
+background:linear-gradient(to bottom, rgba(255,255,255,0.7) 0%, rgba(240, 189, 114, 0.7) 100%);
+padding-bottom: 5px;
+
+}
+.personalityQuizStart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.personalityQuizStart p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    padding: auto;
+    color: #5c3d14;
+}
+.personalityQuizStartBtn{
+    margin: auto;
+    font-size: 16px;
+    line-height: 32px;
+    align-items:center;
+    margin-top: 5px;
+    width: 70%;
+    border: none;
+    cursor: pointer;
+}
+.personalityQuizStartBtn:hover{
+    background-color: #e3e2e2b0;
+}
+.personalityQuizInner1 .question-text1{
+    text-align: center;
+    font-size: 12px;
+    line-height: 32px;
+    padding: auto;
+    color: #000;
+
+} 
+.question-text1 p{
+    font-size: 12px;
+}
+.personalityQuizInner1 .question-text2{
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    padding: auto;
+    color: #000;
+} 
+.question-text-btn{
+    margin: auto;
+    font-size: 12px;
+    line-height: 32px;
+    align-items:center;
+    margin-top: 5px;
+    width: 90%;
+    border: none;
+    cursor: pointer;
+}
+.question-text-btn:hover{
+    background-color: #e3e2e2b0;
+}
+.personalityQuizInner2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.personalityQuizImg{
+    /* background: rgba(255, 255, 255, 0.932); */
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.personalityQuizImg img{
+    width: 60px;
+}
+.personalityQuizImgInner p:nth-child(2){
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.EesyM{
+    width: 240px !important;
+    margin-top: -162px !important;
+}
+.Hiden001{
+    position: fixed;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    /* border: 1px solid #000; */
+    width: 220px;
+    font-size: 19px;
+    color: transparent;
+}
+.Hiden001::selection {
+    background: transparent;
+    color: transparent;
+}
+.Hiden002{
+    position: fixed;
+    right: 305px;
+    height: 35px;
+    bottom: 450px;
+     /* border: 1px solid #000; */
+    width: 160px;
+    font-size: 9px;
+    color: transparent;
+}
+.Hiden002::selection {
+    background: transparent;
+    color: transparent;
+}
+.Hiden003{
+    position: fixed;
+    right: 305px;
+    height: 80px;
+    bottom: 360px;
+     /* border: 1px solid #000; */
+    width: 140px;
+    font-size: 16px;
+    color: transparent;
+}
+.Hiden003::selection {
+    background: transparent;
+    color: transparent;
+}
+.Hiden004{
+    position: fixed;
+   right: 305px;
+    height: 100px;
+    bottom: 270px;
+     /* border: 1px solid #000; */
+    width: 140px;
+    font-size: 19px;
+    color: transparent;
+}
+.Hiden004::selection {
+    background: transparent;
+    color: transparent;
+}
+.Hiden005{
+    position: fixed;
+   right: 305px;
+   
+    height: 100px;
+    bottom: 160px;
+     /* border: 1px solid #000; */
+    width: 140px;
+    font-size: 19px;
+    color: transparent;
+}
+.Hiden005::selection {
+    background: transparent;
+    color: transparent;
+}
+.Hiden006{
+    position: fixed;
+    right: 305px;
+    width: 50px;
+    height: 50px;
+    bottom: 100px;
+     /* border: 1px solid #000; */
+    width: 140px;
+    font-size: 19px;
+    color: transparent;
+}
+.Hiden006::selection {
+    background: transparent;
+    color: transparent;
+}
+.Hiden007{
+    position: fixed;
+    right: 305px;
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+     /* border: 1px solid #000; */
+    width: 140px;
+    font-size: 19px;
+    color: transparent;
+}
+.Hiden007::selection {
+    background: transparent;
+    color: transparent;
+}

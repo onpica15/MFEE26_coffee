@@ -1,0 +1,30 @@
+.hotfood-magin-auto {
+    /* margin: auto; */
+    justify-content: center;
+}
+.hotfoodcard-desktop {
+    display: flex;
+}
+.hotfoodcard-phone {
+    display: flex;
+    display: none;
+}
+
+.hotfood-magin-auto .hotfoodcard-desktop:nth-child(2), .hotfoodcard-desktop:nth-child(4) {
+    padding-top: 100px;
+}
+
+@media screen and (max-width:400px){
+    .home-container {
+        padding: 0 16px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .hotfoodcard-desktop {
+        display: flex;
+        display: none;
+    }
+    .hotfoodcard-phone {
+        display: flex;
+    }
+}

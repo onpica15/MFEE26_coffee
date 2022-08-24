@@ -1,0 +1,97 @@
+    
+    .footer-bgcolor {
+        background-color: #253945;
+    }
+    .footerlogo-wrap {
+        padding: 40px 100px 0px 50px;
+    }
+    .footerlogo-wrap img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .linkcolor-white {
+        color: #ffffff;
+    }
+    .footertext {
+        /* color: #FFFFFF; */
+        margin-bottom: 20px;
+    }
+    .footertext1 ul>li {
+        padding: 3px;
+    }
+    .footertext-wrap {
+        margin-top:60px;
+        margin-bottom:80px;
+    }
+    .footer-pdr-48 {
+        padding-right: 48px;
+    }
+    .footer-pdr-82{
+        padding-right: 82px;
+    }
+    .partition {
+        border-bottom: 1px solid #FFFFFF;
+        
+    }
+    .Copyrighttext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 10px 0px 100px 10px;
+    }
+    .sociallink-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    .sociallink img{
+        width: 48px;
+        height: 48px;
+        margin-top: 20px;
+    }
+    .sociallink-icon{
+        margin-left: 5px;
+    }
+    .scroll-img {
+        width: 100%;
+        height: 700px;
+        opacity: 0.5;
+        background: url(/src/images/frontpage/coffee-shop.jpg) center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+@media screen and (max-width: 400px) {
+    .partition {
+        display: flex;
+        flex-direction: column;
+    }
+    .footerlogo-wrap img {
+        width: 100px;
+        height:100px;
+    }
+    .footertext-wrap {
+        margin: auto;
+    }
+    .footer-pdr-48 {
+        padding-right: 30px;
+    }
+    .footer-pdr-82 {
+        padding-right: 64px;
+    }
+    .sociallink-wrap {
+        position: relative;
+    }
+    .sociallink {
+        position: absolute;
+        top:-175px;
+        right:35px;
+    }
+    .footerlogo-wrap {
+        padding:40px 100px 10px 12px;
+    }
+    .sociallink img {
+        width: 24px;
+        height: 24px;
+    }
+}

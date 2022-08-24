@@ -1,0 +1,22 @@
+.filterbutton {
+    width: 130px;
+    height: 44px;
+    border-radius: 3px;
+    font-size: 18px;
+    background-color: #253945;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .filterbutton {
+        width: auto;
+        height: 44px;
+        font-size: 11px;
+        margin: 10px;
+    }
+}

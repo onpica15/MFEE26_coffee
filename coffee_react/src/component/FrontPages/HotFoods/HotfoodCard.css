@@ -1,0 +1,34 @@
+.hotfood-container {
+    text-align: center;
+}
+
+.hotfood-circle img {
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+}
+
+.hotfood-circle img:hover {
+    border:5px solid #B79973;
+    transform: scale(1.1);
+}
+
+.hotfood-name {
+    font-family: "Kosugi Maru", "Noto Sans TC", sans-serif;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 376px) {
+    .hotfood-container {
+    /* padding-left: 0;
+    
+    }
+    .hotfood-circle img{
+        /* display: none; */
+        width: 230px;
+        height: 230px;
+        border-radius: 100%;
+    }
+    
+}

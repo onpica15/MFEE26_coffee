@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cream);
+}
+.odd-wrap-main{
+    /* 限制範圍 */
+    width: 1440px;
+    margin: 90px auto 90px;
+}
+.odd-container{ 
+    /* 扣掉左右200px */
+    width: calc( 100% - 400px );
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* 歷史訂單詳細 */
+.odd-wrap-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 745px;
+    height: auto;
+    border: 1.2px solid var(--blue);
+    border-radius: 3px;
+    margin-bottom: 100px;
+}
+.odd-title{
+    width: 100%;
+    color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 0;
+}
+.odd-title::after{
+    content: " ";
+    display: block;
+    border-bottom: 1.2px solid var(--blue);
+    width: 100%;
+    padding: 5px 0;
+}
+.odd-detail-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 80px 45px;
+}
+.odd-date{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blue);
+    padding: 0 15px;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+.odd-state{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blue);
+    padding: 0 15px;
+    margin-top: 30px;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+.odd-line{
+    content: " ";
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid var(--gray);
+    padding: 8px 0;
+}
+.odd-date>span, .odd-state>span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* 訂單 */
+.odd-list-wrap{
+    width: 100%;
+    margin-top: 85px;
+}
+.odd-list{
+    width: 100%;
+    height: 215px;
+    border: 1px solid var(--dark-gray);
+    margin-bottom: 50px;
+}
+.odd-list:hover{
+    box-shadow: 4px 4px 5px 0px rgb(0,0,0,0.1);
+    cursor: pointer;
+    transform: translateY(-3px);
+    border: 1px solid var(--dark-gray);
+}
+.odd-list-header{
+    width: 100%;
+    height: 45px;
+    background-color: var(--gray);
+    border-bottom: 1px solid var(--dark-gray);
+    display: flex;
+    align-items: center;
+}
+.odd-list-header-title{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.odd-list-header>span{
+    display: flex;
+    align-items: center;
+}
+.fa-solid{
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 25px;
+}
+.odd-list-header>span{
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+}
+.odd-list-header>span:nth-child(1){
+    width: 353px;
+    display: flex;
+    justify-content: flex-start;
+}
+.odd-list-header>span:nth-child(3){
+    width: 115px;
+}
+.odd-list-header>span:nth-child(5){
+    width: 62px;
+}
+.odd-list-header>span:nth-child(7){
+    width: 115px;
+}
+.odd-body{
+    width: 100%;
+    height: 168px;
+    background-color: white;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+}
+.odd-pic{
+    width: 140px;
+    height: 140px;
+    background-color: var(--gray);
+}
+.odd-product{
+    width: 353px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.odd-product>span{
+    width: 108px;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+}
+.odd-price{
+    display: flex;
+    justify-content: center;
+    width: 115px;
+}
+.odd-quantity{
+    display: flex;
+    justify-content: center;
+    width: 62px;
+}
+.odd-subtotal{
+    display: flex;
+    justify-content: center;
+    width: 115px;
+}
+.odd-str-line{
+    height: 100%;
+    border-left: 1px solid var(--dark-gray);
+}
+/* 合計 */
+.odd-total-wrap{
+    width: 100%;
+    height: 310px;
+    background-color: white;
+    border: 1px solid var(--dark-gray);
+    padding: 35px 45px 80px 45px;
+}
+.odd-total{
+    display: flex;
+    justify-content: space-between;
+    color: var(--blue);
+}
+.odd-discount{
+    display: flex;
+    justify-content: space-between;
+    color: var(--blue);
+    margin-top: 30px;
+}
+.odd-total-line{
+    border-bottom: 1.2px solid var(--gray);
+    width: 100%;
+    padding: 5px 0;
+}
+.odd-pay{
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.odd-pay>span{
+    color: var(--gold);
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+}
+.odd-price-wrap{
+    display: none;
+}
+.odd-price-body{
+    width: 295px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+.odd-line-one{
+    height: 168px;
+    border-left: 1px solid var(--dark-gray);
+}
+.odd-line-two{
+    height: 168px;
+    border-left: 1px solid var(--dark-gray);
+}
+
+/* 手機 */
+@media (max-width: 375px){
+    .odd-container{ 
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .odd-wrap-main{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+    }
+    .odd-wrap-right{
+        width: 319px;
+    }
+    .odd-title{
+        width: 319px;
+        font-weight: 600;
+        font-size: 1.3rem;
+        padding: 0px;
+        text-align: left;
+    }
+    .odd-title::after{
+        content: " ";
+        display: none;
+    }
+    .odd-wrap-left{
+        display: flex;
+        width: 319px;
+        border: none;
+    }
+    .odd-date{
+        display: none;
+    }
+    .odd-state{
+        display: none;
+    }
+    .odd-line{
+        content: " ";
+        display: none;
+    }
+    .odd-detail-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0px;
+    }
+    .odd-list-wrap{
+        width: 319px;
+        margin-top: 50px;
+    }
+    .odd-list-header{
+        width: 319px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        border-bottom: none;
+    }
+    .odd-list-header-title{
+        width: 100%;
+        padding-left: 15px;
+    }
+    .odd-list-header>span:nth-child(1){
+        width: 100%;
+        padding-left: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .odd-list-header>span:nth-child(3){
+        display: none;
+    }
+    .odd-list-header>span:nth-child(5){
+        display: none;
+    }
+    .odd-list-header>span:nth-child(7){
+        display: none;
+    }
+    .odd-list-header>.odd-str-line{
+        display: none;
+    }
+    .odd-body{
+        width: 100%;
+        height: 188px;
+        flex-wrap: wrap;
+        background-color: transparent;
+    }
+    .odd-list{
+        width: 100%;
+        height: 235px;
+        border: none;
+        margin-bottom: 60px;
+    }
+    .odd-product{
+        width: 319px;
+        margin: 15px 0;
+    }
+    .odd-product>span{
+        width: 160px;
+        line-height: 1.3rem;
+    }
+    .odd-string-line{
+        display: none;
+    }
+    .odd-pic{
+        width: 80px;
+        height: 80px;
+    }
+    .odd-price-wrap{
+        width: 319px;
+        height: 25px;
+        background-color: var(--gray);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .odd-price{
+        width: 130px;
+        align-items: center;
+    }
+    .odd-price-wrap>span:nth-child(1){
+        display: flex;
+        justify-content: center;
+        width: 130px;
+    }
+    .odd-price-wrap>span:nth-child(3){
+        display: flex;
+        justify-content: center;
+        width: 43px;
+    }
+    .odd-price-wrap>span:nth-child(5){
+        display: flex;
+        justify-content: center;
+        width: 110px;
+    }
+    .odd-str-line{
+        height: 25px;
+        border-left: 1px solid var(--dark-gray);
+    }
+    .odd-price-body{
+        width: 319px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--dark-gray);
+    }
+    .odd-quantity{
+        width: 43px;
+    }
+    .odd-subtotal{
+        width: 110px;
+    }
+    .odd-line-one{
+        display: none;
+    }
+    .odd-line-two{
+        height: 50px;
+        border-left: 2.5px dotted var(--dark-gray);
+    }
+    .odd-total-wrap{
+        width: 319px;
+        height: 180px;
+        border: 1px solid var(--dark-gray);
+        padding: 23px 20px 23px 20px;
+    }
+    .odd-total{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .odd-discount{
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .odd-total-line{
+        border-bottom: 1.2px solid var(--gray);
+        width: 100%;
+        padding: 5px 0;
+    }
+    .odd-pay{
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+    .odd-pay>span{
+        font-size: 1.5rem;
+        letter-spacing: 0.12rem;
+    }
+
+
+}

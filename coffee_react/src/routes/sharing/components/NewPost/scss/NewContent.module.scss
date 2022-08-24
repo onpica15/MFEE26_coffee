@@ -1,0 +1,238 @@
+.wrap{
+    padding: 1.5rem 1.75rem;
+    flex: 1 1 auto;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+       
+    &::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+    &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+    &::-webkit-scrollbar-thumb {
+        background: #c5c0ba;
+        border-radius: 2.5px;
+      }
+
+    .author{
+        display: flex;
+        margin-left: .1rem;
+        margin-bottom: 1.15rem;
+        flex-shrink: 0;
+
+        .avatar_wrap{
+            margin-right: .75rem;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 2rem;
+            overflow: hidden;
+        
+            >img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            line-height: 1rem;
+            height: 2.25rem;
+           
+            .nickname{
+                font-weight: 500;
+                // font-family: "Kosugi Maru","Noto Sans TC",sans-serif;
+            }
+        }
+        .grey_span{
+            font-size: 12px;
+            color: #787878;
+            line-height: 1rem;
+        }
+    }
+
+    .form_wrap{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        .form_upper{
+            flex-grow: 1;
+        }
+        .form_bottom{
+            display: flex;
+            margin-left: auto;
+
+        }
+
+        
+
+        .btn, .dis_btn, .cancel_btn{
+            border: none;
+            cursor: pointer;
+            padding: 0 2.5rem;
+            border-radius: 3px;
+            color: white;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 2.25rem;
+            background: #324A59;
+        }
+
+        .cancel_btn{
+            background: #B79973;
+            padding: 0 1rem;
+            margin-right: 1rem;
+        }
+
+        .dis_btn{
+            cursor:auto;
+            background-color: #4d606cbe;
+        }
+    }
+
+    .tag_wrap{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+
+        >div{
+            display: inline-block;
+            margin-bottom: 6px;
+
+            padding:0 3px;
+        }
+    }
+
+    select,input{
+        font-size: 16px;
+        border: none;
+        border-bottom: 1.5px solid rgb(206, 205, 203);
+        background: transparent;
+        height: 2.25rem;
+        padding-left: 5px;
+
+        &::placeholder{
+            font-size: 16px;
+            color: #DAD8D6;
+            padding-left: 0;
+        }
+    }
+
+    textarea{
+        font-size: 16px;
+        resize: none;
+        height: 260px;
+        width: 100%;
+        border: none;
+        background: transparent;
+        padding: 2px 6px;
+        margin-bottom: .25rem;
+        overflow-x: hidden;
+
+        &::placeholder{
+            font-size: 16px;
+            color: #DAD8D6;
+            font-weight: normal;
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+          }
+          
+        &::-webkit-scrollbar-track {
+            background: transparent;
+          }
+    
+        &::-webkit-scrollbar-thumb {
+            background: #c5c0ba;
+            border-radius: 2.5px;
+          }
+    }
+
+    input[name="preview"]{
+        margin-bottom: 1rem;
+        width: 50%;
+        min-width: 5rem;
+    }
+
+    .title_wrap{
+        display: flex;
+        margin-bottom: 1.5rem;
+        height: auto;
+
+        >select{
+            width: 5rem;
+            margin-right: 1rem;
+        }
+        >input{
+            flex: 1 1 auto;
+            margin-left: auto;
+            width: 50%;
+        }
+    }
+
+    .limit{
+        display: flex;
+        width: 100%;
+        border-bottom: 1.5px solid rgb(206, 205, 203);
+        height: 1.5rem;
+
+        >span{
+            vertical-align: text-bottom;
+            margin-left: auto;
+            font-size: 12px;
+            color: #DAD8D6;
+        }
+
+    }
+    
+    .plus{
+        font-size: 14px;
+        color: #5495f5;
+        font-weight: 700;
+        margin-left: 2px;
+    }
+}
+
+:global(.prevTag){
+    cursor: pointer;
+    &:hover{
+        background:rgb(171, 189, 206) !important;      
+    }
+}
+:global(.myTag){
+    cursor: pointer;
+    &:hover{
+        background:rgb(171, 189, 206) !important; 
+    }
+}
+
+
+@media (max-width:1200px) {
+    .wrap{
+        padding: 1rem;
+        height: auto;
+        textarea{
+            height: 200px;
+        }
+    }
+}
+
+@media (max-height:768px) {
+    .wrap{
+        padding-bottom: 1.5rem;
+        height: auto;
+
+        textarea{
+            height: 120px;
+        }
+    }
+    
+}

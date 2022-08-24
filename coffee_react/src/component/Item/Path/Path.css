@@ -1,0 +1,25 @@
+.Path {
+    user-select: none;
+}
+.Path-font {
+    line-height: 32px;
+}
+.Path-font > a {
+    text-decoration: none;
+}
+
+.Path-font > a > span {
+    color: #253945;
+}
+
+.Path-wrap {
+    width: 100%;
+    height: 32px;
+    background-color: #fcfaf7;
+}
+
+@media (max-width: 375px) {
+    .Path-wrap > span {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,57 @@
+.home-container {
+    width: 100%;
+    background-color: #FEFEFD;
+    padding-right: 200px;
+    padding-left: 200px;
+    letter-spacing: 0.5rem;
+    margin: auto;
+    padding-top: 47px;
+}
+
+.bottom-line {
+    width: 160px;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+.home-title {
+    font-family: "Kosugi Maru", "Noto Sans TC", sans-serif;
+    color:rgba(10, 10, 10, 0.73); 
+    align-items: center;
+    padding-top: 30px;
+    /* text-shadow: 1px 1px rgb(231, 231, 231), 1px 1px rgb(231, 231, 231), 1px 1px rgb(231, 231, 231); */
+
+}
+.m-auto {
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.starproduct-box {
+    overflow:visible;
+}
+.starproduct-phone-layout {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 50px 0px;
+    margin-top: -40px;
+}
+.starproduct-viewbtn {
+
+}
+
+@media screen and (max-width:400px){
+    .home-container {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .starproduct-box {
+        flex-direction: column;
+    }
+    .starproduct-box {
+        padding-left: 70px;
+    }
+}

@@ -1,0 +1,107 @@
+.goodcourse-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.goodcourse-paragraph {
+    width: 500px;
+    height: 270px;
+    background-color: #d9d9d9;
+    padding: 20px 20px;
+    color: black;
+}
+/* .goodcourse-box {
+    width: 1100px;
+} */
+
+.goodcourse_img {
+    width: 594px;
+    height: 424px;
+}
+
+
+.goodcourse-text {
+    line-height: 2.5rem;
+    padding-top: 10px;
+}
+
+.container-relative {
+    background-color: #fcfaf7;
+}
+
+
+.left-barista {
+    /* width: 500px; */
+    /* transform: translateX(20px) translateY(-150px);
+    z-index: 999 !important; */
+}
+
+/* .foodCourse-btn {
+    transform: translateX(100px) translateY(-200px);
+} */
+
+.pagetop-wrap {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.pagetop-btn {
+    text-align: center;
+}
+.pagetop-text {
+    color: #324A59;
+    text-align: center;
+}
+.home-box {
+    margin-top: 30px;
+}
+
+
+
+@media screen and (max-width:400px) {
+    /* .goodcourseimg_scale img {
+        width: 327px;
+        height: 196px;
+    } */
+    .goodcourse-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .right-barista-width img {
+        width: 327px;
+        height: 196px;
+    }
+    .goodcourse_img {
+        width: 327px;
+        height: 196px;
+    }
+    .goodcourse-paragraph {
+        width: 280px;
+        height: 250px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+    .goodcourse-text {
+        line-height: 1.5rem;
+    }
+    .f-reverse {
+        flex-direction: column;
+    }
+    .right-brewedcoffee {
+        transform: translateX(40px) translateY(-30px);
+    }
+    .right-barista-img {
+        transform: translateX(20px) translateY(-55px);
+    }
+    .left-barista {
+        z-index: 99999;
+        transform: translateX(10px) translateY(-90px);
+    }
+    .goodcourse-wrap {
+        margin-bottom: 150px;
+    }
+}

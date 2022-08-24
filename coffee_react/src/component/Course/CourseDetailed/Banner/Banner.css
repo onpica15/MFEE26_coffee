@@ -1,0 +1,140 @@
+.CourseDetailed_banner-txt {
+    height: 140px;
+    width: 621px;
+}
+
+.CourseDetailed_banner-btn {
+    border: 1px solid #b7997380;
+    height: 140px;
+    width: 378px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.courseBannerBtn-wrap {
+    position: absolute;
+    bottom: 27px;
+    user-select: none;
+}
+
+.banner-Btn-Hover:hover {
+    background-color: #aa8b64;
+}
+
+.CourseDetailed_banner_level {
+    transform: translateX(15px);
+    background-color: #8da47f;
+    width: 54px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 0.875rem;
+}
+.CourseDetailed_banner_normal {
+    transform: translateX(15px);
+    background-color: #cf8f54;
+    width: 54px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 0.875rem;
+}
+.CourseDetailed_banner_hard {
+    transform: translateX(15px);
+    background-color: #a45959;
+    width: 54px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.CourseDetailed_banner_text {
+    padding-top: 30px;
+    color: #898787;
+    font-size: 0.9375rem;
+    line-height: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.CourseDetailed_banner_area {
+    padding-top: 23px;
+    color: #898787;
+}
+
+.CourseDetailed_banner-price {
+    color: #3e3e3e;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    font-weight: 500;
+}
+
+.courseBannerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px !important;
+    padding-bottom: 33px !important;
+}
+
+.courseBannerBtn {
+    display: block;
+    width: 261px;
+    background-color: #b79973;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 3px 0px rgb(0, 0, 0, 0.1);
+    padding: 8px 0px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .courseBannerContainer {
+        display: block;
+    }
+
+    .CourseDetailed_banner-btn {
+        margin-top: 40px;
+        margin-bottom: 7px;
+        width: 537px;
+    }
+
+    .courseBannerBtn {
+        width: 421px;
+    }
+}
+
+@media (max-width: 375px) {
+    .CourseDetailed_banner-txt {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .CourseDetailed_banner-btn {
+        width: 320px;
+        margin: 40px auto 7px;
+    }
+
+    .courseBannerBtn {
+        width: 220px;
+    }
+}

@@ -1,0 +1,139 @@
+#CourseContentSignup {
+    margin-top: 30px;
+    user-select: none;
+}
+.people-number {
+    width: 147px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #d1cfcf;
+    margin-right: 25px;
+    margin-left: 19px;
+    color: #3e3e3e;
+    font-size: 1.125rem;
+}
+
+.CourseContentBtn {
+    margin-right: 9px;
+}
+
+.CourseContentSignup-price {
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #3e3e3e;
+    padding-bottom: 9px;
+}
+.CourseContentDate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CourseContentBtnRwd {
+    width: 132px;
+    background-color: rgba(197, 173, 143, 0.6);
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 3px 0px rgb(0, 0, 0, 0.1);
+    padding: 8px 0px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.CourseContentBtnRwd:hover {
+    background-color: #c5ad8f;
+}
+
+.CourseContentBtnClick {
+    background-color: #c5ad8f;
+}
+
+.courseSignUpBtnRwd {
+    width: 273px;
+    background-color: #b79973;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 3px 0px rgb(0, 0, 0, 0.1);
+    padding: 8px 0px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.courseSignUpBtnRwd:hover {
+    background-color: #aa8b64;
+}
+
+.courseSignUpMinBtn {
+    width: 41px;
+    background-color: #c5ad8f;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 3px 0px rgb(0, 0, 0, 0.1);
+    padding: 8px 0px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.courseSignUpMinBtnClick {
+    background-color: #896f4f;
+}
+
+.CourseContentBtn-focus {
+    background-color: #c5ad8f;
+}
+
+@media (max-width: 768px) {
+    .CourseContentDate {
+        display: block;
+    }
+
+    .CourseContentBtnRwd {
+        width: 222px;
+    }
+    .PeopleNumberRwd {
+        justify-content: space-between;
+        width: 459px;
+    }
+
+    .people-number {
+        width: 246px;
+    }
+
+    .CourseContentBtn {
+        padding-right: 15px;
+    }
+
+    .CourseContentSignup-price {
+        width: 459px;
+    }
+
+    .courseSignUpBtnRwd {
+        width: 459px;
+    }
+}
+
+@media (max-width: 375px) {
+    .CourseContentBtnRwd {
+        width: 131px;
+    }
+
+    .PeopleNumberRwd {
+        width: 272px;
+    }
+    .people-number {
+        width: 146px;
+    }
+    .CourseContentSignup-price {
+        width: 272px;
+    }
+
+    .courseSignUpBtnRwd {
+        width: 272px;
+    }
+}

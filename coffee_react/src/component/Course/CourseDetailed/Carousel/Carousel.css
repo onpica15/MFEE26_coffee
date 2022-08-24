@@ -1,0 +1,80 @@
+.course-Carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.Ellipse-wrap {
+    position: absolute;
+    bottom: 17px;
+    left: calc(50% - 67.5px);
+}
+
+.Ellipse {
+    background-color: #d9d9d9;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 17px;
+    cursor: pointer;
+}
+
+.course-Ellipse-focus {
+    opacity: 1;
+    background-color: #fff;
+}
+.arror-left {
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.arror-left > div {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 35px;
+    top: calc(50% - 30px);
+    background: url(/src/images/course/left-arror.png) no-repeat center center;
+    background-color: rgba(136, 136, 136, 0.492);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arror-right {
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.arror-right > div {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 35px;
+    top: calc(50% - 30px);
+    background: url(/src/images/course/right-arror.png) no-repeat center center;
+    background-color: rgba(136, 136, 136, 0.492);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .course-Carousel {
+        height: 267px;
+    }
+
+    .course-slideshow {
+        height: 267px !important;
+    }
+
+    .course-slideshowSlider {
+        height: 267px !important;
+    }
+}
